@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+  outline: 1px solid black;
+  color: #fff;
+}
+html {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #2a6fcd, #5683ff);
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Questrial", sans-serif;
+}
+
+.container-fluid {
+  padding-right: 20%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #146c94;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.btn-outline-success {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.navbar-collapse {
+  display: contents;
+}
+
+.nav-link {
+  color: #fff;
+  background-color: #19a7ce;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+
+.banner_main {
+  background: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  min-height: 700px;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
