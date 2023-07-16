@@ -75,28 +75,64 @@
           </figure>
         </figure>
       </section>
-      <section id="services" class="banner_main">Послуги</section>
+      <section id="services" class="banner_main">
+        <p>Послуги</p>
+        <div class="services-container">
+          <div class="price-pic">
+            <img src="/images/pic9.jpeg" />
+          </div>
+          <div class="price">
+            <table class="price-table">
+              <tr>
+                <th>Product</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <td>Product 1</td>
+                <td>$10</td>
+              </tr>
+              <tr>
+                <td>Product 2</td>
+                <td>$20</td>
+              </tr>
+              <tr>
+                <td>Product 3</td>
+                <td>$30</td>
+              </tr>
+              <tr>
+                <td>Product 4</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <td>Product 5</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <td>Product 6</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <td>Product 7</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <td>Product 8</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <td>Product 9</td>
+                <td>$40</td>
+              </tr>
+              <tr>
+                <td>Product 10</td>
+                <td>$40</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
       <section id="contact" class="banner_main">Контакти</section>
     </main>
     <footer>Contacts</footer>
-    <script>
-      $(document).ready(function () {
-        var scrollSpeed = 1; // Скорість прокрутки
-        var current = 0; // Початкова позиція
-
-        function autoScroll() {
-          current -= scrollSpeed; // Зменшуємо значення поточної позиції
-          $(".container-pic").css("transform", "translateX(" + current + "px)"); // Змінюємо положення контейнера з картинками
-
-          // Якщо картинки закінчились, починаємо знову
-          if (current + $(".container-pic").width() <= 0) {
-            current = $(window).width();
-          }
-        }
-
-        // Викликаємо функцію autoScroll кожні 20 мілісекунд
-        setInterval(autoScroll, 20);
-      });
-    </script>
   </body>
 </html>

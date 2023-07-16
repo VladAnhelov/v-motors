@@ -97,6 +97,47 @@ h1 {
   filter: drop-shadow(2px 4px 6px black);
 }
 
+.price {
+  width: 100%;
+  margin: 20px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 2px solid;
+}
+
+.price-table th {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.price-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.price-table tr:hover {
+  background-color: #ddd;
+}
+
+.services-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-pic img {
+  width: auto;
+  border-radius: 20px;
+  margin: 20px;
+}
 .container-pic {
   display: flex;
   flex-direction: row;
