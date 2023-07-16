@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 * {
   box-sizing: border-box;
-  //outline: 1px solid black;
+  /*
+  outline: 1px solid black;
+  */
   color: #fff;
 }
 html {
@@ -81,6 +83,16 @@ h1 {
 .container-pic {
   display: flex;
   flex-direction: row;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .pic-info {

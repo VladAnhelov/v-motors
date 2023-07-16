@@ -15,10 +15,8 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <title>V-motors</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      defer
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       defer
@@ -81,5 +79,24 @@
       <section id="contact" class="banner_main">Контакти</section>
     </main>
     <footer>Contacts</footer>
+    <script>
+      $(document).ready(function () {
+        var scrollSpeed = 1; // Скорість прокрутки
+        var current = 0; // Початкова позиція
+
+        function autoScroll() {
+          current -= scrollSpeed; // Зменшуємо значення поточної позиції
+          $(".container-pic").css("transform", "translateX(" + current + "px)"); // Змінюємо положення контейнера з картинками
+
+          // Якщо картинки закінчились, починаємо знову
+          if (current + $(".container-pic").width() <= 0) {
+            current = $(window).width();
+          }
+        }
+
+        // Викликаємо функцію autoScroll кожні 20 мілісекунд
+        setInterval(autoScroll, 20);
+      });
+    </script>
   </body>
 </html>
