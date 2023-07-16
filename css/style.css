@@ -121,10 +121,6 @@ h1 {
   padding: 10px;
 }
 
-.price-table tr:hover {
-  background-color: #ddd;
-}
-
 .services-container {
   width: 100%;
   display: flex;
@@ -137,6 +133,7 @@ h1 {
   width: auto;
   border-radius: 20px;
   margin: 20px;
+  filter: drop-shadow(2px 4px 6px black);
 }
 .container-pic {
   display: flex;
