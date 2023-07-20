@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom, #2a6fcd, #5683ff);
+  background: #9d9d9d;
   margin: 0;
   overflow-x: hidden;
   font-family: "Questrial", sans-serif;
@@ -25,7 +25,7 @@ body {
 
 .navbar {
   width: 100%;
-  background-color: #ffffff00;
+  background-color: #59529c;
   box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.745);
 }
 
@@ -55,9 +55,9 @@ body {
 }
 
 .banner_main {
-  background: url(../images/banner.jpg);
+  /* background: url(../images/banner.jpg); */
   background-repeat: no-repeat;
-  min-height: 700px;
+  height: 700px;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
@@ -139,6 +139,24 @@ h1 {
   display: flex;
   flex-direction: row;
   animation: scroll 40s linear infinite;
+}
+
+.banner_main.contact {
+  display: flex;
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  background-color: #e7cea6;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.svg-img {
+  z-index: -1;
+  width: 100%;
 }
 
 @keyframes scroll {
