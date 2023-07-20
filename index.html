@@ -31,10 +31,10 @@
     <header>
       <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand">
+          <div class="navbar-brand">
             <img src="images/logo.png" alt="Bootstrap" width="50" height="50" />
             V-Motors
-          </a>
+          </div>
           <div class="navbar-collapse">
             <a class="nav-link" href="#home">Головна</a>
             <a class="nav-link" href="#services">Послуги</a>
@@ -44,40 +44,16 @@
       </nav>
     </header>
     <main>
-      <section id="home" class="banner_main">
+      <section id="home" class="banner_main main">
         <div class="container-info">
           <h1>Автозапчастини від V-Motors</h1>
-          <p>Тут ви зможете придбати запчастини по низьким цінам</p>
+          <div class="container-info main">
+            <img class="backgound-image" src="/images/backgound-image-1.png" />
+            <p>Тут ви зможете придбати запчастини по низьким цінам</p>
+          </div>
         </div>
-        <figure class="container-pic">
-          <figure class="pic-info">
-            <img src="images/pic1.jpg" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic2.png" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic3.jpg" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic4.jpeg" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic5.jpeg" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic6.jpg" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic7.jpg" />
-          </figure>
-          <figure class="pic-info">
-            <img src="images/pic8.jpg" />
-          </figure>
-        </figure>
       </section>
       <section id="services" class="banner_main">
-        <p>Послуги</p>
         <div class="services-container">
           <div class="price-pic">
             <img src="/images/pic9.jpeg" />
@@ -132,6 +108,34 @@
           </div>
         </div>
       </section>
+      <div class="carusel-block">
+        <figure class="container-pic">
+          <figure class="pic-info">
+            <img src="images/pic1.jpg" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic2.png" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic3.jpg" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic4.jpeg" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic5.jpeg" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic6.jpg" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic7.jpg" />
+          </figure>
+          <figure class="pic-info">
+            <img src="images/pic8.jpg" />
+          </figure>
+        </figure>
+      </div>
       <section id="contact" class="banner_main contact">Контакти</section>
     </main>
     <footer>© Copyright 2023 - V-Motors</footer>
