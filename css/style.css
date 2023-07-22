@@ -67,7 +67,7 @@ body {
 .backgound-image {
   display: block;
   width: 700px;
-  transform: translate(50px, 50px);
+  transform: translate(-40px, 50px);
   filter: drop-shadow(2px 4px 10px #000000);
 }
 .container-info {
@@ -77,10 +77,48 @@ body {
   margin-bottom: 20px;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.container-info * {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.container-info h1 {
+  animation-delay: 0.5s;
+}
+
+.container-info .backgound-image {
+  animation-delay: 1s;
+}
+
+.container-info p {
+  animation-delay: 1.5s;
+}
+
+p {
+  color: #ebebeb;
+}
+
 .container-info.main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+.image-block {
+  margin: 15px 10px 5px 80px;
 }
 
 .carusel-block {
@@ -94,6 +132,43 @@ h1 {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.services-container .image-block {
+  animation-name: fadeInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.services-container .price {
+  animation-name: fadeInRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 .pic-info {
@@ -202,11 +277,16 @@ footer {
   .container-info.main {
     flex-direction: column;
   }
+
+  .container-info p {
+    padding: 80px;
+  }
   .backgound-image {
     width: 400px;
-    transform: translate(20px, 50px);
+    transform: translate(0px, 50px);
     filter: drop-shadow(2px 4px 10px #000000);
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+    padding: 15px;
   }
   .carusel-block {
     margin-top: 110px;
