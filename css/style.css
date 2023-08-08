@@ -113,6 +113,16 @@ body {
   align-items: center;
 }
 
+.banner_main.info {
+  background-image: url(/images/blob.svg);
+  background-repeat: no-repeat;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .backgound-image {
   display: block;
   width: 550px;
@@ -266,27 +276,12 @@ figure {
 }
 
 .price {
+  border: 3px solid #2196f3;
+  box-shadow: (2px 4px 6px black);
+  border-radius: 20px;
   width: 100%;
+  padding: 30px;
   margin: 20px;
-}
-
-.price-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  border: 2px solid;
-}
-
-.price-table th {
-  background-color: #2196f3;
-  color: white;
-  padding: 10px;
-  text-align: left;
-}
-
-.price-table td {
-  border: 1px solid #ddd;
-  padding: 10px;
 }
 
 .services-container {
